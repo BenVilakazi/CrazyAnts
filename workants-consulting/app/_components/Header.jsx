@@ -9,6 +9,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Services from '../services/page'
+import Link from 'next/link'
+
 
 
 function Header() {
@@ -66,12 +68,11 @@ function Header() {
                   <DropdownMenu>
                   <DropdownMenuTrigger>Services</DropdownMenuTrigger>
                   <DropdownMenuContent>
-                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem><Services/></DropdownMenuItem>
-                  <DropdownMenuItem>Billing</DropdownMenuItem>
-                  <DropdownMenuItem>Team</DropdownMenuItem>
-                  <DropdownMenuItem>Subscription</DropdownMenuItem>
+                  <DropdownMenuItem><Link href="/services">Service (All)</Link></DropdownMenuItem>
+                  <DropdownMenuItem><Link href="/architectural">Architectural</Link></DropdownMenuItem>
+                  <DropdownMenuItem><Link href="/building">Building</Link></DropdownMenuItem>
+                  <DropdownMenuItem><Link href="/property">Property Development</Link></DropdownMenuItem>
                   </DropdownMenuContent>
                   </DropdownMenu>
 
